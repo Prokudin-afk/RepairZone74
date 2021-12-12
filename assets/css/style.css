@@ -1,0 +1,80 @@
+.gradient1 {
+    background: rgb(43,168,215);
+    background: linear-gradient(90deg, rgba(43,168,215,1) 0%, rgba(140,15,189,1) 28%, rgba(20,113,131,1) 100%);
+}
+
+.neomorphism {
+    box-shadow:
+            -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+.neomorphism1 {
+    box-shadow:
+            12px 12px 16px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.neomorphism2 {
+    box-shadow:
+            12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+            -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+
+header {
+  position: relative;
+  background-color: black;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+#divBlock{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 5;
+}
+
+#span1{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: 100% 100%;
+  background-image: url(../img/pageLoading1.gif);
+}
