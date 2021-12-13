@@ -114,7 +114,7 @@
                  
                 while($lines = mysqli_fetch_assoc($result))
                 {
-                    array_push($itog, $lines);
+                    array_push($itog, $lines);                      //массив объектов из строк БД
                 }
                   
                 print_r(json_encode($itog));
@@ -193,7 +193,7 @@
                 
                 $result = $conn->query("SELECT history.id, vehicles.brand,vehicles.model, vehicles.stateNumber, services.name, history.start, history.finish, users.phone, vehicles.status
                     from history 
-                    INNER JOIN vehicles ON history.vehicle_id = vehicles.id 
+                    INNER JOIN vehicles ON history.vehicle_id = vehicles.id                                        //таблица для панели админа
                     INNER JOIN services ON history.service_id = services.id INNER JOIN users on vehicles.owner_id = users.id");
 
                 $itog = [];
